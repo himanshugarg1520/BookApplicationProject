@@ -1,0 +1,25 @@
+<!-- <h1 class="top-header">Book Details Application</h1>
+<div class="outer-container">
+  <app-headers (searchEvent)="onSearch($event)"></app-headers>
+  <app-list [filteredBooks]="(filteredBooks$ | async) ?? []"></app-list>
+
+  <router-outlet></router-outlet>
+</div> -->
+
+
+
+
+
+<h1 class="top-header">Book Details Application</h1>
+
+<div class="outer-container">
+
+  <ng-container *ngIf="!isDetailView">
+    <app-headers (searchEvent)="onSearch($event)"></app-headers>
+    <app-list [filteredBooks]="(filteredBooks$ | async) ?? []"></app-list>
+  </ng-container>
+
+  <router-outlet *ngIf="isDetailView"></router-outlet>
+
+</div>
+

@@ -1,0 +1,100 @@
+
+
+
+   <!-- <div class="book-item">
+    <div class="book-info">
+      <div class="book-row">
+        <span class="book-title">
+          <a (click)="viewBookDetails()">{{ book.title }}</a>
+        </span>
+        <span class="book-author">{{ book.author }}</span>
+        <span class="book-publish-year">{{ book.yearofpublish }}</span>
+        <span class="book-publisher">{{ book.publisher }}</span>
+        <span class="book-genre">{{ book.genre }}</span>
+        <span class="book-pages">{{ book.pages }}</span>
+      </div>
+    </div> -->
+ 
+    <!-- <div class="actions">
+      <button class="action-button" (click)="onEdit()">Edit</button>
+      <button class="action-button" (click)="onDelete()">Delete</button>
+    </div>  -->
+
+
+<!-- 
+    <div class="book-item">
+      <div class="book-info">
+        <div class="book-row">
+
+          <span class="book-title">
+            <a (click)="viewBookDetails()">{{ book.title }}</a>
+          </span>
+
+
+          <span class="book-author">{{ book.author }}</span>
+          <span class="book-publish-year">{{ book.yearofpublish }}</span>
+          <span class="book-publisher">{{ book.publisher }}</span>
+          <span class="book-genre">{{ book.genre }}</span>
+          <span class="book-pages">{{ book.pages }}</span>
+        </div>
+      </div>
+    
+      <div class="actions">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="onEdit()">
+            <mat-icon>edit</mat-icon>
+            <span>Edit</span>
+          </button>
+          <button mat-menu-item (click)="onDelete()">
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
+
+      </div>
+    </div>
+
+
+
+   -->
+
+
+
+   <div class="book-item">
+    <div class="book-info">
+      <div class="book-row">
+
+        <span class="book-title">
+          <a (click)="navigateToDetails(book.title)" class="title-link">{{ book.title }}</a>
+        </span>
+        <span class="book-author">{{ book.author }}</span>
+        <span class="book-publish-year">{{ book.yearofpublish }}</span>
+        <span class="book-publisher">{{ book.publisher }}</span>
+        <span class="book-genre">{{ book.genre }}</span>
+        <span class="book-pages">{{ book.pages }}</span>
+
+      </div>
+    </div>
+  
+    <div class="actions">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+  
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onEdit()">
+          <mat-icon>edit</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item (click)="onDelete()">
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+  

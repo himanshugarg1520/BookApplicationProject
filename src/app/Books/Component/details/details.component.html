@@ -1,0 +1,32 @@
+<!-- <div *ngIf="book" class="book-details">
+
+  <h2>{{ book.title }}</h2>
+
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Year of Publish:</strong> {{ book.yearofpublish }}</p>
+    <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+    <p><strong>Genre:</strong> {{ book.genre }}</p>
+    <p><strong>Pages:</strong> {{ book.pages }}</p>
+    <p><strong>Description:</strong> {{ book.description }}</p>
+
+</div> -->
+
+
+
+<div *ngIf="book" class="book-details">
+
+  <div class="back-arrow" (click)="goback()">
+    <mat-icon>arrow_back</mat-icon>
+    <span>Back</span>
+  </div>
+  <h2>{{book.title}}</h2>
+
+  <p><strong>Author: </strong>{{book.author}}</p>
+  <p><strong>Year of Publish: </strong>{{book.yearofpublish}}</p>
+  <p><strong>Publisher: </strong>{{book.publisher}}</p>
+  <p><strong>Genre: </strong>{{book.genre}}</p>
+  <p><strong>Pages: </strong>{{book.pages}}</p>
+
+  <p><strong>Description: </strong>{{book.description}}</p>
+
+</div>

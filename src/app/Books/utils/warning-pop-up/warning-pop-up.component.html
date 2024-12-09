@@ -1,0 +1,29 @@
+<!-- <h2 mat-dialog-title>Delete Book</h2>
+<mat-dialog-content>
+  <p>Are you sure you want to delete the book "{{ data.bookName }}"?</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">No</button>
+  <button mat-button color="warn" (click)="onConfirm()">Yes</button>
+</mat-dialog-actions> -->
+
+
+
+
+
+<div mat-dialog-title>
+    <span>Delete Book</span>
+    <button mat-icon-button (click)="onClose()" class="close-button">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+  
+  <mat-dialog-content>
+    <p>Are you sure you want to delete this book {{ data.bookName }}?</p>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-raised-button  (click)="onConfirm()" style="color: red;">Yes</button>
+    <button mat-button (click)="onClose()" style="color: blue;">No</button>
+  </mat-dialog-actions>
+  

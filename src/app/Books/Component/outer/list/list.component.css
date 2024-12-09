@@ -1,0 +1,210 @@
+/* 
+
+   .book-list {
+    margin: 10px; /
+  }
+  
+  .book-header {
+    display: flex;
+    justify-content: flex-start; 
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+  .book-header span {
+    padding: 0 20px; 
+  }
+  
+  .header-title {
+    width: 16%; 
+    
+  }
+  
+  .header-author {
+    width: 10%; 
+  }
+  
+  .header-year-publish {
+    width: 13%;
+  }
+  
+  .header-publisher {
+    width: 13%; 
+  }
+  
+  .header-genre {
+    width: 12%; 
+  }
+  
+  .header-pages {
+    width: 15%; 
+  }
+  
+  
+  .add-button {
+    margin-left: 20px; 
+    flex-grow: 0; 
+  }
+  
+  @media (max-width: 768px) {
+    .book-header,
+    .search-header-container {
+      flex-direction: column; 
+    }
+  
+    .book-header span,
+    .search-header-container {
+      width: 100%; 
+    }
+  }
+   */
+
+
+
+
+
+/* 
+  .book-list {
+    margin: 10px; 
+   }
+  
+  .book-header {
+    display: flex;
+    justify-content: flex-start; 
+    background-color: #f5f5f5;
+    padding: 10px;
+    position: sticky;
+    font-weight: bold;
+    top: 0;
+    z-index: 1000;
+    max-width: 100%;
+  }
+  
+  .book-header span {
+    padding: 0 20px;
+  }
+  
+  .header-title {
+    width: 17%;
+    text-align: center;
+  }
+  
+  .header-author {
+    width: 10%; 
+  }
+  
+  .header-year-publish {
+    width: 12%;
+  }
+  
+  .header-publisher {
+    width: 15%; 
+  }
+
+  .header-pages {
+    width: 5%; 
+  }
+  
+  .header-genre {
+    width: 10%; 
+  }
+
+  
+  .actions {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
+  .add-button {
+    margin-left: 20px; 
+    flex-grow: 0; 
+  }
+  
+  @media (max-width: 768px) {
+    .book-header,
+    .search-header-container {
+      flex-direction: column;
+    }
+  
+    .book-header span,
+    .search-header-container {
+      width: 100%; 
+      padding: 5px 0;
+      text-align: left; 
+    }
+  }
+   */
+
+
+
+
+
+   .book-list{
+    position: sticky
+   }
+
+   .book-header {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-title {
+    width: 15%; 
+    text-align: center;
+  }
+  
+  .header-author {
+    width: 15%;
+    text-align: center;
+  }
+  
+  .header-year-publish {
+    width: 20%;
+    text-align:  center;
+  }
+  
+  .header-publisher {
+    width: 12%;
+    text-align: center;
+  }
+  
+  .header-genre {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .header-pages {
+    width: 13%;
+    text-align: center;
+  }
+  
+  .book-row span {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .book-header,
+    .book-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .book-header span,
+    .book-item span {
+      width: 100%;
+      text-align: left;
+      padding: 5px 0;
+    }
+  }
+  

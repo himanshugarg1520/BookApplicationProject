@@ -1,0 +1,68 @@
+  .book-details {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-details h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .book-details p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  .book-details strong {
+    font-weight: 600;
+    color: #34495e;
+  }
+
+  .book-details p:last-child{
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .book-details p{
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: #555;
+  }
+
+
+  .back-arrow {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #3498db;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  .back-arrow mat-icon {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  .back-arrow:hover {
+    color: #2980b9;
+  }
+
+  .back-arrow-previous{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #3498db;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+

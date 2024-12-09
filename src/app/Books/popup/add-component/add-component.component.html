@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>Add Book</h2>
+
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Book Title</mat-label>
+    <input matInput [(ngModel)]="booktitle" type="string">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Author</mat-label>
+    <input matInput [(ngModel)]="bookauthor" type="string">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Publish Year</mat-label>
+    <input matInput [(ngModel)]="bookyearofpublish" type="number" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Publisher</mat-label>
+    <input matInput [(ngModel)]="bookpublisher" type="string">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Genre</mat-label>
+    <input matInput [(ngModel)]="bookgenre" type="string">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Pages</mat-label>
+    <input matInput [(ngModel)]="bookpages" type="number">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="primary" (click)="onSave()">Save</button>
+</div>

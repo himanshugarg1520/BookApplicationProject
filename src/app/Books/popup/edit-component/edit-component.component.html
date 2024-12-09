@@ -1,0 +1,78 @@
+<!-- <h2 mat-dialog-title>Edit Book</h2>
+
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Book Title</mat-label>
+    <input matInput [(ngModel)]="booktitle">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Author</mat-label>
+    <input matInput [(ngModel)]="bookauthor">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Publish Year</mat-label>
+    <input matInput [(ngModel)]="bookyearofpublish">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Publisher</mat-label>
+    <input matInput [(ngModel)]="bookpublisher">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Genre</mat-label>
+    <input matInput [(ngModel)]="bookgenre">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Book Pages</mat-label>
+    <input matInput [(ngModel)]="bookpages">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="primary" (click)="onSave()">Save</button>
+</div> -->
+
+
+<h2 mat-dialog-title>Edit Book</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)]="data.title">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Author</mat-label>
+    <input matInput [(ngModel)]="data.author">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>PublishYear</mat-label>
+    <input matInput [(ngModel)]="data.yearofpublish">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Publisher</mat-label>
+    <input matInput [(ngModel)]="data.publisher">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Genre</mat-label>
+    <input matInput [(ngModel)]="data.genre">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Pages</mat-label>
+    <input matInput [(ngModel)]="data.pages">
+  </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()" color="primary">Save</button>
+</mat-dialog-actions>

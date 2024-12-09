@@ -1,0 +1,89 @@
+
+
+/* 
+  .book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .book-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .book-row {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  .book-row span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #efefef;
+  }
+   */
+
+   .book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .book-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .book-row {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  .book-row span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actions button[mat-icon-button] {
+    padding: 0;
+    margin: 0;
+  }
+  

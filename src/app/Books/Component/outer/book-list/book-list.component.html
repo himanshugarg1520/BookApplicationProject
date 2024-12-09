@@ -1,0 +1,67 @@
+
+
+   <!-- <div class="search-header-container">
+    <div class="search-books">
+      <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Books Search</mat-label>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput [(ngModel)]="searchText" placeholder="Search Books">
+      </mat-form-field>
+    </div>
+  
+    <button mat-raised-button color="primary" (click)="addDialog()" class="add-button">
+        Add Book
+    </button>
+
+  </div> -->
+
+
+   <div class="book-list">
+
+    <div class="book-header">
+      <span class="header-title">BookTitle</span>
+      <span class="header-author">BookAuthor</span>
+      <span class="header-year-publish">BookPublishYear</span>
+      <span class="header-publisher">BookPublisher</span>
+      <span class="header-genre">BookGenre</span>
+      <span class="header-pages">BookPages</span>
+      <span class="header-description">BookDescription</span>
+    </div>
+
+
+    <mat-card *ngFor="let book of filterBooks; let i = index" class="book-item">
+      <div class="book-info">
+        <div class="book-row">
+
+          <span class="book-title">{{ book.title }}</span>
+          <span class="book-author">{{ book.author }}</span>
+          <span class="book-publish-year">{{ book.yearofpublish }}</span>
+          <span class="book-publisher">{{ book.publisher }}</span>
+          <span class="book-genre">{{ book.genre }}</span>
+          <span class="book-pages">{{ book.pages }}</span>
+          <span class="book-description">{{ book.description }}</span>
+        </div>
+  
+        <div class="actions">
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+  
+          <mat-menu #menu="matMenu">
+            
+            <button mat-menu-item (click)="editbook(book,i)" style="color: blue;">
+                <mat-icon>edit</mat-icon>
+                <span>Edit</span>
+            </button>
+            
+            <button mat-menu-item (click)="deletebook(i)" style="color: red;">
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+
+          </mat-menu>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  

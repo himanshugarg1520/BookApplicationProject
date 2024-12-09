@@ -1,0 +1,83 @@
+<h2 mat-dialog-title style="color: burlywood;">Add Book</h2>
+<div mat-dialog-content>
+
+    <mat-form-field>
+        <mat-label>Book Title</mat-label>
+        <input matInput [(ngModel)]="booktitle" type="string" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Book Author</mat-label>
+        <input matInput [(ngModel)]="bookauthor" type="string">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Book Publish Year</mat-label>
+        <input matInput [(ngModel)]="bookyearofpublish" type="number" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Book Publisher</mat-label>
+        <input matInput [(ngModel)]="bookpublisher" type="string" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-label>Book Genre</mat-label>
+        <input matInput [(ngModel)]="bookgenre" type="string">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Book Pages</mat-label>
+        <input matInput [(ngModel)]="bookpages" type="number">
+    </mat-form-field>
+    
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button (click)="Oncancel()">Cancel</button>
+    <button mat-button color="btn-primary" (click)="Save()">Save</button>
+</div>
+
+
+
+<!-- 
+<h2 style="color: burlywood;">Add Book</h2>
+
+<div class="dialog-content">
+
+    <div class="form-field">
+        <label for="book-title">Book Title</label>
+        <input type="text" id="book-title" [(ngModel)]="booktitle" placeholder="Enter book title">
+    </div>
+
+    <div class="form-field">
+        <label for="book-author">Book Author</label>
+        <input type="text" id="book-author" [(ngModel)]="bookauthor" placeholder="Enter Book author">
+    </div>
+
+    <div class="form-field">
+        <label for="book-year">Book Publish Year</label>
+        <input type="number" id="book-year" [(ngModel)]="bookyearofpublish" placeholder="Enter Publish Year">
+    </div>
+
+    <div class="form-field">
+        <label for="book-publisher">Book Publisher</label>
+        <input type="text" id="book-publisher" [(ngModel)]="bookpublisher" placeholder="Enter Publisher">
+    </div>
+
+    <div class="form-field">
+        <label for="book-genre">Book Genre</label>
+        <input type="text" id="book-genre" [(ngModel)]="bookgenre" placeholder="Enter Genre">
+    </div>
+
+    <div class="form-field">
+        <label for="book-pages">Book Pages</label>
+        <input type="number" id="book-pages" [(ngModel)]="bookpages" placeholder="Enter Books Pages">
+    </div>
+
+</div>
+
+<div class="dialog-actions">
+    <button (click)="Oncancel()">Cancel</button>
+    <button (click)="Save()" class="btn-primary">Save</button>
+</div> -->

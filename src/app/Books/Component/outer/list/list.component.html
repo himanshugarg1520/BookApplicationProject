@@ -1,0 +1,51 @@
+<!-- 
+   <div class="book-list">
+    <div class="book-header">
+      <span class="header-title">Name</span>
+      <span class="header-author">Author</span>
+      <span class="header-year-publish">Year of Publish</span>
+      <span class="header-publisher">Publisher</span>
+      <span class="header-genre">Genre</span>
+      <span class="header-pages">Pages</span>
+    </div>
+
+
+
+      <div class="book-list">
+        <div *ngFor="let book of filteredBooks; let i = index" class="book-item">
+          <app-item 
+            [book]="book" 
+            [index]="i" 
+            (bookUpdated)="onBookUpdated($event)" 
+            (bookDeleted)="onBookDeleted($event)">
+          </app-item>
+        </div>
+      </div>
+
+    </div> -->
+    <!-- (click)="onSelectBook(book.title)" -->
+
+
+
+
+    <div class="book-list">
+      <div class="book-header">
+        <span class="header-title">Name</span>
+        <span class="header-author">Author</span>
+        <span class="header-year-publish">Year of Publish</span>
+        <span class="header-publisher">Publisher</span>
+        <span class="header-genre">Genre</span>
+        <span class="header-pages">Pages</span>
+      </div>
+    
+      <div *ngFor="let book of filteredBooks; let i = index" class="book-item">
+        <app-item 
+          [book]="book" 
+          [index]="i" 
+          (bookUpdated)="onBookUpdated($event)" 
+          (bookDeleted)="onBookDeleted($event)"
+          >
+        </app-item>
+      </div>
+    </div>
+    

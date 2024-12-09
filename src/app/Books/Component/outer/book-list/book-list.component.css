@@ -1,0 +1,220 @@
+
+/* new css */
+
+  /* .book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .book-header{
+    display: flex;
+    justify-content: space-between;
+    padding: flex;
+    font-weight: bold;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid black;    
+  }
+
+  .header-title, .header-author, .header-year-publish, .header-publisher, .header-genre, .header-pages{
+    flex: 1;
+    text-align: left;
+  } 
+ */
+
+/* 
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0; 
+    margin: 0;
+  }
+  
+  .book-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px;                 
+    font-weight: bold;
+    background-color: white;
+    position: sticky;
+    top: 0;                        
+    z-index: 1000;                
+    border-bottom: 1px solid black;  
+  }
+  
+  .header-title, 
+  .header-author, 
+  .header-year-publish, 
+  .header-publisher, 
+  .header-genre, 
+  .header-pages {               
+    flex: 1;                      
+    text-align: left;            
+    padding-right: 10px;          
+    white-space: nowrap;           
+    overflow: hidden;              
+    text-overflow: ellipsis;
+  }
+
+
+  .book-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;      
+    border-radius: 8px;            
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  
+ .book-info {
+    display: flex;
+    flex-direction: row;           
+    flex-wrap: wrap;                
+    align-items: center;   
+    
+  }
+  
+  .book-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;          
+  }
+  
+  .book-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .book-author, 
+  .book-publish-year,
+  .book-publisher,
+  .book-genre,
+  .book-pages {
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;       
+    align-items: center;
+  }
+  
+  .book-info {
+    margin-right: 10px;
+  }
+  
+  button[mat-icon-button] {
+    margin-left: 10px;               
+  } */
+
+
+
+
+  .book-list {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .book-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+  .book-header span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .book-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .book-row {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    position: sticky;
+  }
+  
+  .book-row span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mat-icon-button {
+    margin-left: 10px;
+  }
+
+  .search-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: white; 
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000; 
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .search-books {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid gray;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .add-button {
+    margin-left: 20px;
+    flex-grow: 0;
+  }
+  
